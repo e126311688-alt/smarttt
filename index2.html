@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D列印工作室 | 列印設備</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Microsoft JhengHei", sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        
+        header { background-color: #1e293b; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; color: #38bdf8; }
+        nav a { color: #cbd5e1; text-decoration: none; margin-left: 20px; padding: 8px 16px; border-radius: 5px; transition: 0.3s; font-weight: bold; }
+        nav a:hover { background-color: #334155; color: white; }
+        nav a.active { background-color: #0284c7; color: white; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        h1 { color: #0f172a; margin-bottom: 10px; border-left: 5px solid #0284c7; padding-left: 15px; }
+        .subtitle { color: #64748b; margin-bottom: 30px; }
+
+        .machine-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 25px; display: flex; flex-direction: column; gap: 10px; border-left: 6px solid #38bdf8; }
+        .machine-box h2 { color: #0f172a; }
+        .badge { align-self: flex-start; background: #1e293b; color: #38bdf8; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
+        ul { margin-left: 20px; color: #475569; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">3D PRINT LAB</div>
+        <nav>
+            <a href="index.html">材料 (Materials)</a>
+            <a href="index2.html" class="active">機器 (Machines)</a>
+            <a href="index3.html">成品 (Prints)</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>核心列印設備架構</h1>
+        <p class="subtitle">認識不同運動結構與成型原理的 3D 列印機。</p>
+
+        <div class="machine-box">
+            <span class="badge">高速 FDM 結構</span>
+            <h2>CoreXY 封閉式高速列印機</h2>
+            <p>透過雙馬達皮帶連動控制 XY 軸移動，噴頭總成輕量化，大幅減少高速移動時的慣性震動，並具備主動震動補償功能。</p>
+            <ul>
+                <li><strong>列印速度：</strong> 最高可達 500 mm/s</li>
+                <li><strong>優勢：</strong> 封閉恆溫艙體，適合列印工程塑膠（ABS/ASA/尼龍），支援多色自動供料系統 (AMS)。</li>
+            </ul>
+        </div>
+
+        <div class="machine-box">
+            <span class="badge">經典 FDM 結構</span>
+            <h2>龍門架式 (Bed Slinger) 列印機</h2>
+            <p>Y 軸由熱床前後移動控制，X 與 Z 軸由龍門架負責。結構簡單、維修保養容易，是目前最普及的入門與教學機種。</p>
+            <ul>
+                <li><strong>列印速度：</strong> 標準 60 - 150 mm/s（新款配備線性導軌可達 250+ mm/s）</li>
+                <li><strong>優勢：</strong> 開放式結構散熱極佳，非常適合列印 PLA 與 TPU 軟料。</li>
+            </ul>
+        </div>
+
+        <div class="machine-box">
+            <span class="badge">光固化技術</span>
+            <h2>LCD / MSLA 光固化列印機</h2>
+            <p>利用特定波長的紫外線（405nm）透過螢幕遮罩，逐層照射液態光敏樹脂使其固化成型。</p>
+            <ul>
+                <li><strong>層厚精度：</strong> 可達 0.01 - 0.05 mm（幾乎無層紋）</li>
+                <li><strong>優勢：</strong> 細節表現極致，適合微縮模型、牙科模具與精密治具原型。</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
